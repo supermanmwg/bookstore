@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">"
+    
+     <EditText 
+        android:id= "@+id/database1"
+        android:layout_width ="match_parent"
+        android:layout_height = "wrap_content"
+
+        android:hint="数据库名"/>
+     
+    <EditText 
+        android:id= "@+id/bookname1"
+        android:layout_width ="match_parent"
+        android:layout_height = "wrap_content"
+
+        android:hint="书名"/>
+    <EditText 
+        android:id= "@+id/author1"
+        android:layout_width ="match_parent"
+        android:layout_height = "wrap_content"
+
+        android:hint="作者"/>
+     <EditText 
+        android:id= "@+id/pages1"
+        android:layout_width ="match_parent"
+        android:layout_height = "wrap_content"
+
+        android:hint="页数"/>
+     <EditText 
+        android:id= "@+id/price1"
+        android:layout_width ="match_parent"
+        android:layout_height = "wrap_content"
+
+        android:hint="价格"/>
+    <Button 
+	    android:id="@+id/sure1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="确定"/>
+
+</LinearLayout>

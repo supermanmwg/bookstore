@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bookstore"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+          <activity android:name=".MainActivity">
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+          </activity>  
+            
+          <activity android:name="com.example.bookstore.AddBook">
+              <intent-filter> 
+                  <action android:name="com.example.bookstore.addbook" />
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+          </activity>
+              
+          <activity android:name ="com.example.bookstore.CreateBookdatabase">
+              <intent-filter> 
+                  <action android:name="com.example.bookstore.createbookdatabase" />
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+          </activity>
+          
+          <activity android:name ="com.example.bookstore.QueryBook">
+                <intent-filter> 
+                  <action android:name="com.example.bookstore.querybook" />
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+          </activity>
+          
+            <activity android:name ="com.example.bookstore.BookDetail">
+                <intent-filter> 
+                  <action android:name="com.example.bookstore.bookdetail" />
+                  <category android:name="android.intent.category.DEFAULT" />
+              </intent-filter>
+          </activity>
+          
+          <activity android:name="com.example.bookstore.QueryDataBase"></activity>        
+    </application>
+
+</manifest>
